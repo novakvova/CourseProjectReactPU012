@@ -7,10 +7,7 @@ const App = () => {
 
   const handleGoogleLogin=(resp: any) =>{
     console.log("Google login resp", resp);
-    console.log("Token Id", resp.credential);
-    //var userInfo = jwt_decode(resp.credential);
-    //console.log("User info ", userInfo);
-    
+    console.log("Token Id", resp.credential);  
     
   }
 
@@ -30,7 +27,6 @@ const App = () => {
 
   return (
     <>
-      <h1>Google login</h1>
       <div id="signInDiv"></div>
     </>
   );
